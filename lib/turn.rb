@@ -25,8 +25,7 @@ end
 
 
 # validates if the space is open or taken by an existing "X" or "O"
-#|| board[index] == " " ||
-      #board[index] == "" || board[index] == nil
+
 def valid_move?(board, index)
   if (board[index] <=0 && board[index] >=8)
     return true
