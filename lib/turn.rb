@@ -27,9 +27,9 @@ end
 # validates if the space is open or taken by an existing "X" or "O"
 
 def valid_move?(board, index)
-  if (board[index] <=0 && board[index] >=8)
+  if (index <=0 && index >=8)
     return true
-  elsif (board[index] == " " || board[index] == "" || board[index] == nil)
+  elsif index == " " || index == "" || index == nil)
   
    return false
     end
